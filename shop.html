@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/all.min.css">
+        <link rel="stylesheet" href="/css/shop.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-logo">
+                <img src="/images/logo.png" alt="" width="100" height="50">
+            </div>
+            <div onclick=" menu()" class="menu">
+                <img  id="menubar" src="/images/menu.png" alt="" width="30" height="30"> 
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul id="display">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/product.html">Product</a></li>
+                        
+                        <li><a href="/contact.html">contact</a></li>
+                        <li><a href="/account.html">Account</a></li>
+                       
+                    </ul>
+                </nav>
+            
+            </div>
+           
+        </div>
+ 
+  <!-- ----------------      main block start here------------ -->
+        <div class="main-block">
+            <!-- --------inner child-------- -->
+            <div class="inner-child">
+                <!-- ----------------grand child start here------------ -->
+             <div class="grand-child heading">
+                 <div class="left-side">
+                     <h4>product</h4>
+                 </div>
+                 <div class="right-block">
+                     <div class="right-left-contain">
+                         <h4>Quantity</h4>
+                     </div>
+                     <div class="right-right-contain">
+                         <h4 > Subtotal</h4>
+                     </div>
+                 </div>
+             </div>
+          
+          
+          
+             <div class="grand-child">
+                <div class="left-side">
+                    <img src="/images/buy-1.jpg" alt="">
+                    <h4>Red T-shirt</h4>
+                    <span>$50</span>
+                    <button onclick=" checkone()" class="btn" type="button" >ADD TO CARD</button>
+                    <!-- <span onclick="incrementvalue()" class="remove">Remove</span> -->
+                </div>
+                <div class="right-block">
+                    <div class="right-left-contain right-left-color">
+                        <button  onclick=" minus()" class="minus">-</button>
+                        <span class="firstnumber" id="getone">0</span>
+                        <button  onclick=" plus()"   class="plus">+</button>
+                    </div>
+                    <div class="right-right-contain">
+                        <h4 id="one">0</h4>
+                    </div>
+                </div>
+             </div>
+
+             <div class="grand-child">
+                <div class="left-side">
+                    <img src="/images/buy-2.jpg" alt="">
+                    <h4>Puma Gray Sport shoes</h4>
+                    <span>$70</span>
+                  
+            <button  class="btn"onclick="checktwo()" type="button" id="btn">ADD TO CARD</button>
+            <!-- <span class="remove" id="remove-two">Remove</span> -->
+                </div>
+                <div class="right-block">
+                    <div class="right-left-contain right-left-color">
+                        <button onclick=" minustwo() " class="minus">-</button>
+                        <span class="firstnumber" id="get">0</span>
+                        <button onclick=" plustwo()"  class="plusicon">+</button>
+                    </div>
+                    <div class="right-right-contain">
+                        <h4 id="second">0</h4>
+                    </div>
+                </div>
+             </div>
+
+             <div class="grand-child">
+                <div class="left-side">
+                    <img src="/images/buy-3.jpg" alt="">
+                    <h4>HFX Gray Trackpants</h4>
+                    <span>$55</span>
+                    <button onclick=" checkthree()" id="btn3"class="btn"type="button" >ADD TO CARD</button>
+                    <!-- <span class="remove">Remove</span> -->
+                </div>
+                <div class="right-block">
+                    <div class="right-left-contain right-left-color">
+                        <button onclick=" minusthree()" class="minus">-</button>
+                        <span class="firstnumber" id="gethree">0</span>
+                        <button onclick=" plusthree()" class="plus">+</button>
+                    </div>
+                    <div class="right-right-contain">
+                        <h4 id="third">0</h4>
+                    </div>
+                </div>
+            </div>
+<table>
+    <td></td>
+</table>
+            </div>
+            <div class="subtotal">
+                <div class="subtotal-left">
+                    <h3>subtotal</h3>
+                </div>
+                <div class="totals">
+              
+                    <h3 id="total">0</h3>
+                </div>
+            </div>
+           
+        </div>
+       <div class="proceed-btn">
+           <button type="button" >Proceed to Pay
+            <i class="fa-solid fa-arrow-right-long" style="margin:0px 10px;"></i>
+           </button>
+           
+
+ 
+
+       </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
