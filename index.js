@@ -101,42 +101,16 @@ totalamount(array[2])
 let text =document.getElementById('total')
 let sum =0
 const totalamount =() =>{
- 
-    let getfirst=document.getElementById("getone").innerText;
-    let getsecond=document.getElementById("get").innerText;
-    let getthird=document.getElementById("gethree").innerText;
+let text =document.getElementById('total')
+let sum =0
+const totalamount =() =>{
+   let check = array.reduce((accumalator,curelement)=>{
+      return  accumalator +=curelement
+        
+   });
+   text.innerText=check
+}   
 
-    let check;
-
- if(getfirst==0 && getsecond!=0 && getthird!=0 ){
-     check=array[1]+array[2]
-     text.innerText=check
- }
- else if(getfirst!=0  && getsecond==0 && getthird==0){
-     check=array[0]
-     text.innerText=check
- }
- else if(getfirst==0  && getsecond!=0 && getthird==0){
-    check=array[1]
-    text.innerText=check
-}
-else if(getfirst==0  && getsecond==0 && getthird!=0){
-    check=array[2]
-    text.innerText=check
-}
- else if(getsecond==0 && getfirst!=0 && getthird!=0){
-    check=array[0]+array[2]
-    text.innerText=check
-}
-else if(getthird==0 && getsecond!=0 && getfirst!=0 ){
-    check=array[0]+array[1]
-    text.innerText=check
-}
-else {
-    check=array[0]+array[1]+array[2]
-text.innerText=check
-}
-  return check
 }   
 
 
