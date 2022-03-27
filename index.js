@@ -23,8 +23,8 @@ const minus =() =>{
 let count =0;
 let gettwo =document.getElementById("get")
 const plustwo =() =>{
-rText=70
-    }
+
+    
     count +=1
     gettwo.innerText =count
 }
