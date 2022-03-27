@@ -7,12 +7,7 @@ const menu = () =>{
 let flag =0;
 let get =document.getElementById("getone")
 const plus =() =>{
-    let firstresult =document.getElementById("one")
-    if(flag>=5){
-        alert("SORRY STOCK ITEMS NOT AVALIBLE ")
-        flag=0;
-      firstresult.innerText="50"
-    }
+   
 
     flag +=1
     get.innerText =flag
@@ -28,11 +23,7 @@ const minus =() =>{
 let count =0;
 let gettwo =document.getElementById("get")
 const plustwo =() =>{
-    let secondresult =document.getElementById("second")
-    if(count>=5){
-        alert("SORRY STOCK ITEMS NOT AVALIBLE ")
-        count=0;
-  secondresult.innerText=70
+rText=70
     }
     count +=1
     gettwo.innerText =count
@@ -50,11 +41,7 @@ let getthree=document.getElementById("gethree")
 const plusthree =() =>{
     
 let thirdresult =document.getElementById("third")
-    if(num>=5){
-        alert("SORRY STOCK ITEMS NOT AVALIBLE ")
-        num=0;
- thirdresult.innerText=55
-    }
+  
     num +=1
     getthree.innerText =num
 }
