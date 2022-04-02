@@ -135,11 +135,14 @@ flex-direction: row;
     margin: 5px 5px;
 border-radius: 20px;
     color: white;
+     transition: background-image 0.25s ease-in-out;
     background: rgb(235, 71, 85);
     padding: 10px 25px;
     border: 0px;
 }
-
+.main-block  .inner-child .grand-child .left-side button:hover{
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)
+}
 .subtotal {
     display: flex;
     flex-direction: row;
@@ -161,6 +164,7 @@ margin-top: 10px;
     position: absolute;
     right: 200px;
     bottom:30px;
+  
 
 
 }
@@ -168,13 +172,17 @@ margin-top: 10px;
 .proceed-btn button{
     margin: 15px 15px;
     border-radius: 20px;
-       
+         transition: background-image 0.25s ease-in-out;
        color: white;
         background: rgb(235, 71, 85);
         padding: 15px 45px;
         border: 0px;    
 }
+.proceed-btn button:hover{
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%)
+     
 
+}
 
 @media screen and (max-width:555px) {
     .header {
