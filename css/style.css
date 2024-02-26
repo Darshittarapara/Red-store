@@ -5,6 +5,9 @@
     font-style: Light 300 italic;
     font-family: 'Outfit', sans-serif;
 }
+body {
+    overflow-x: hidden;
+}
 header {
 height: 100vh;
 background: radial-gradient( white 2%,hsl(0, 35%, 78%) 100%);
